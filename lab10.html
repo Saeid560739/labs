@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="nl">
+    
+    <Head>
+
+    </Head>
+    <body>
+        <script>
+
+        </script>
+            
+           <form name="form"> 
+        <input type="text" name="bedrag" placeholder="Vul bedrag in">         
+        <label for="lblvaluta">Choose a valuta:</label>         
+        <select name="valuta" id="valuta">            
+             <option value="dollar">Euro/Dollar</option>            
+              <option value="euro">Dollar/Euro</option>             
+              <option value="rubble">Euro/Rubble</option>             
+              <option value="erubbel">Rubble/Euro</option>         
+            </select>         
+            <input type="button" value="conversie" onclick="document.getElementById('form').innerHTML = 'conversie : ' + exchange(document.form.bedrag.value, document.form.valuta.value).toFixed(2)">        
+            </form><br>
+            <div id="form"></div>  
+            <script>
+
+    function dollarKoers() {
+        return (1.36);
+}
+    function euroKoers() {
+        return (0.74)
+}
+    function dollar_naar_euro(inputdollars) {
+        return (inputdollars * euroKoers());
+}
+    function wissel(bedrag, valuta) {
+    if (valuta == 'euro') {
+        return (bedrag * dollarKoers());
+    } else if (valuta == 'dollar') {
+        return (bedrag * euroKoers());
+    }
+}
+
+  // Dollar koers
+    function dollarKoers() {
+    return (1.36);
+}
+//Euro koers
+    function euroKoers() {
+        return (0.74);
+}
+
+    function roebelkoers() {
+        return (48.40);
+}
+    function roebel_eurokoers() {
+        return (0.02);
+}
+    function exchange(bedrag, conversie) {
+    
+    if (conversie == 'euro') {
+        return (bedrag * dollarKoers());
+    } else if (conversie == 'dollar') {
+        return (bedrag * euroKoers());
+    } else if (conversie == 'rubble') {
+        return (bedrag * roebelkoers());
+    } else if(conversie == 'erubbel') {
+        return (bedrag * roebel_eurokoers());
+    }
+}
+
+  </script>
+  </body>
+</html>
