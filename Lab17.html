@@ -1,0 +1,327 @@
+
+        <!DOCTYPE html>
+        <html lang="nl">
+            <head>
+                <meta hhtp-equiv="content-type"
+                content="text/html;
+                charset=UTF-8">
+                <title>Variabelen</title>
+        </head>
+        <style>
+            .main div{
+                float: left;
+                text-align: center;
+                width: 70px;
+              height: 70px;
+              background-color: blue;
+              color: rgb(242, 242, 247);
+              font-size: 60px;
+              margin: 10px;
+
+            }
+            #b{
+                float: left;
+                text-align: center;
+                width: 70px;
+              height: 70px;
+              background-color: red;
+              color: black;
+              font-size: 60px;
+              margin: 10px;
+              position: absolute;
+              top: 84px;
+
+            }
+            #b1{
+                float: left;
+                text-align: center;
+                width: 70px;
+              height: 70px;
+              background-color: red;
+              color: black;
+              font-size: 60px;
+              margin: 10px;
+              position: absolute;
+              top: 84px;
+              left: 98px;
+
+            }
+            #b2{
+                float: left;
+                text-align: center;
+                width: 70px;
+              height: 70px;
+              background-color: red;
+              color: black;
+              font-size: 60px;
+              margin: 10px;
+              position: absolute;
+              top: 84px;
+              left: 188PX;
+
+
+            }
+            #b3{
+                float: left;
+                text-align: center;
+                width: 70px;
+              height: 70px;
+              background-color: red;
+              color: black;
+              font-size: 60px;
+              margin: 10px;
+              position: absolute;
+              top: 84px;
+              left: 278px;
+
+            }
+            #b4{
+                float: left;
+                text-align: center;
+                width: 70px;
+              height: 70px;
+              background-color: red;
+              color: black;
+              font-size: 60px;
+              margin: 10px;
+              position: absolute;
+              top: 84px;
+              left: 368px;
+
+            }
+            #b5{
+                float: left;
+                text-align: center;
+                width: 70px;
+              height: 70px;
+              background-color: red;
+              color: black;
+              font-size: 60px;
+              margin: 10px;
+              position: absolute;
+              top: 84px;
+              left: 458px;
+
+
+            }
+            #b6{
+                float: left;
+                text-align: center;
+                width: 70px;
+              height: 70px;
+              background-color: red;
+              color: black;
+              font-size: 60px;
+              margin: 10px;
+              position: absolute;
+              top: 84px;
+              left: 548px;
+
+            }
+            #b7{
+                float: left;
+                text-align: center;
+                width: 70px;
+              height: 70px;
+              background-color: red;
+              color: black;
+              font-size: 60px;
+              margin: 10px;
+              position: absolute;
+              top: 84px;
+              left: 638px;
+
+            }
+            #b8{
+                float: left;
+                text-align: center;
+                width: 70px;
+              height: 70px;
+              background-color: red;
+              color: black;
+              font-size: 60px;
+              margin: 10px;
+              position: absolute;
+              top: 84px;
+              left: 728px;
+
+            }
+            #leter{
+                width: 200px;
+                height: 300px;
+                display: block;
+                position: absolute;
+                left: 100px;
+                top: 200px;
+                font-size: 100px;
+            
+            }
+            #botton{
+                width: 200px;
+                height: 300px;
+                position: absolute;
+                top: 200px;
+                left: 350px;
+                font-size: 63px;
+                background-color: blue;
+            }
+            #alert{
+                position: absolute;
+                top: 200px;
+                left: 400px;
+                font-size: 60px;
+            }
+            #botton:hover{
+                cursor: pointer;
+
+            }
+
+         
+
+        </style>
+        <body>
+            <p>Lab17</p>
+            <p>Stadsnaam?</p>
+            <div class="main">
+                <div id="A"></div>
+                <div id="A1"></div>
+                <div id="A2"></div>
+                <div id="A3"></div>
+                <div id="A4"></div>
+                <div id="A5"></div>
+                <div id="A6"></div>
+                <div id="A7"></div>
+                <div id="A8"></div></div>
+                <br><div class="foto">
+                    <div id="b">?</div>
+                    <div id="b1">?</div>
+                    <div id="b2">?</div>
+                    <div id="b3">?</div>
+                    <div id="b4">?</div>
+                    <div id="b5">?</div>
+                    <div id="b6">?</div>
+                    <div id="b7">?</div>
+                    <div id="b8">?</div></div>
+            <button id="botton" onclick="anystad()">Check</button>
+            <input id="leter" type="text" placeholder="Kies " maxlength="1"></input>
+            <p id="alert"></p>
+
+
+
+
+           
+
+
+            
+            <script>
+                var stad = new Array("amsterdam","barcelona","london","parijs","berlijn","antwerpen","roma","madrid");
+                //console.log();
+                     
+                     woord1 = stad[Math.floor(Math.random()*10)];
+                     document.getElementById('A').textContent= woord1.charAt(0);
+                     document.getElementById('A1').textContent= woord1.charAt(1);
+                       document.getElementById('A2').textContent= woord1.charAt(2);
+                       document.getElementById('A3').textContent= woord1.charAt(3);
+                       document.getElementById('A4').textContent= woord1.charAt(4);
+                       document.getElementById('A5').textContent= woord1.charAt(5);
+                       document.getElementById('A6').textContent= woord1.charAt(6);
+                       document.getElementById('A7').textContent= woord1.charAt(7);
+                       document.getElementById('A8').textContent= woord1.charAt(8);
+                       if(document.getElementById('A4').textContent==''){
+                        document.getElementById('A4').style.display ='none';
+                        document.getElementById('b4').style.display ='none';
+
+                       }
+                       else{document.getElementById('A4').textContent= woord1.charAt(4)}
+                       if(document.getElementById('A5').textContent==''){
+                        document.getElementById('A5').style.display ='none';
+                        document.getElementById('b5').style.display ='none';
+
+                        
+                       }
+                       else{document.getElementById('A5').textContent= woord1.charAt(5)}
+                       if(document.getElementById('A6').textContent==''){
+                        document.getElementById('A6').style.display ='none';
+                        document.getElementById('b6').style.display ='none';
+
+                       }
+                       else{document.getElementById('A6').textContent= woord1.charAt(6)}
+                       if(document.getElementById('A7').textContent==''){
+                        document.getElementById('A7').style.display ='none';
+                        document.getElementById('b7').style.display ='none';
+
+                       }
+                       else{document.getElementById('A7').textContent= woord1.charAt(7)}
+                       if(document.getElementById('A8').textContent==''){
+                        document.getElementById('A8').style.display ='none';
+                        document.getElementById('b8').style.display ='none';
+
+                       }
+                       else{document.getElementById('A8').textContent= woord1.charAt(8)}
+                       
+
+
+                     function anystad(){
+                        
+                         var L = woord1.charAt(0);
+                         var L1 = woord1.charAt(1);
+                         var L2 = woord1.charAt(2);
+                         var L3 = woord1.charAt(3);
+                         var L4 = woord1.charAt(4);
+                         var L5 = woord1.charAt(5);
+                         var L6 = woord1.charAt(6);
+                         var L7 = woord1.charAt(7);
+                         var L8 = woord1.charAt(8);
+
+                         var LL = document.getElementById('leter').value;
+                         
+                         if(L==LL){
+                            document.getElementById('b').style.display ='none';  
+                         }
+                         if(L1==LL){
+                            document.getElementById('b1').style.display ='none';  
+                         }
+                         if(L2==LL){
+                            document.getElementById('b2').style.display ='none';  
+                         }
+                         if(L3==LL){
+                            document.getElementById('b3').style.display ='none';  
+                         }
+                         if(L4==LL){
+                            document.getElementById('b4').style.display ='none';  
+                         }
+                         if(L5==LL){
+                            document.getElementById('b5').style.display ='none';  
+                         }
+                         if(L6==LL){
+                            document.getElementById('b6').style.display ='none';  
+                         }
+                         if(L7==LL){
+                            document.getElementById('b7').style.display ='none';  
+                         }
+                         if(L8==LL){
+                            document.getElementById('b8').style.display ='none';  
+                         }
+                         
+                       
+                       
+
+
+
+
+
+
+                         
+                     }
+                     
+
+                     
+ 
+                    
+                    
+                
+
+            </script>    
+        
+        </body>
+        </html>  
