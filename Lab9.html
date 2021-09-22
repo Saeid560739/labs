@@ -1,0 +1,55 @@
+
+        <!DOCTYPE html>
+        <html lang="nl">
+            <head>
+                <meta hhtp-equiv="content-type"
+                content="text/html;
+                charset=UTF-8">
+                <title>Variabelen</title>
+        </head>
+        <body>
+            <p>Lab09</p>
+            <div id="nieks"></div>
+            <div id="vandaag"></div>
+            <div id="fact"></div>
+            <div id="Bdatum"></div>
+            <div id="dagen"></div>
+
+
+            
+            <script>
+                document.getElementById("nieks").innerHTML = "\n";
+                var rol = (prompt("Wat is je rol?"));
+                var code = (prompt("Wat is je inlogcode?"));
+                switch (rol) {
+                    case "admin":
+                        if (code=="admin") { 
+                        document.getElementById("vandaag").innerHTML = "welcome admin";
+                        } 
+                        else {
+                        document.getElementById("vandaag").innerHTML = "Code ongeldig";
+    
+                        }
+            
+                    break;    
+                    case "student":
+                        if (code=="student") { 
+                        document.getElementById("vandaag").innerHTML = "welcome student";
+                        } 
+                        else {
+                        document.getElementById("vandaag").innerHTML = "Code ongeldig";
+    
+                        }
+                    break;   
+                    default:
+                        document.getElementById("vandaag").innerHTML = "Rol ongeldig";
+
+                    
+                }
+
+            
+
+            </script>    
+        
+        </body>
+        </html>  
