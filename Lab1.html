@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="nl">
+    <head>
+        <meta hhtp-equiv="content-type"
+        content="text/html;
+        charset=UTF-8">
+        <title>Variabelen</title>
+</head>
+<body>
+    <div id="lab"></div>
+    <div id="fact"></div>
+    <div id="nieks"></div>
+    <div id="klant"></div>
+    <div id="boek"></div>
+    <div id="hoeveelheid"></div>
+    <div id="prijs"></div>
+    <div id="total"></div>
+    <div id="btw"></div>
+    <div id="totalbtw"></div>
+    
+    <script>
+        var klantnaam = prompt("voer je eigen naam in ");
+        var aantal = parseInt(prompt("aantal boeken te bestellen?"));
+        var titel = "JavaScript";
+        var prijs = 29.90;
+        var total = prijs * aantal;
+        var btw = (total / 100) * 6;
+        var totalbtw = btw + total;
+        document.getElementById("lab") .innerText = "lab 01";
+        document.getElementById("fact") .innerText = "Factuur";
+        document.getElementById("nieks") .innerText = "\n";
+        document.getElementById("klant") .innerText = "Bedankt voor je bestelling: " + klantnaam;
+        document.getElementById("boek") .innerText = "Boektitel is: " + titel;
+        document.getElementById("hoeveelheid") .innerText = "Aantal te bestellen: " + aantal;
+        document.getElementById("prijs") .innerText = "Prijs per boek is: " + prijs.toFixed(2);
+        document.getElementById("total") .innerText = "Bedrag is: " + total.toFixed(2);
+        document.getElementById("btw") .innerText = "BTW is: " + btw.toFixed(2);
+        document.getElementById("totalbtw") .innerText = "Totaal inclusief BTW is: " + totalbtw.toFixed(2);
+
+    </script>    
+
+</body>
+</html>  
